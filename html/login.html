@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/student.css">
+    <link rel="stylesheet" href="/css/bootstrap-darkly-4.2.1.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/animate-3.7.0.min.css">
+    <link rel="stylesheet" href="/css/bootnavbar.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top"  id="navbar">
+        <div class="container">
+            <a href="/index.html" class="navbar-brand" id="rub"><span>Rubric</span></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarcol"> <!-- This is for the resposiveness -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse main-nav" id="navbarcol">
+                <ul class="navbar-nav listcolor">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">FACULTIES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">LAWSA</a></li>
+                            <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">FABSA</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Banking Dept</a></li>
+                                    <li><a class="dropdown-item" href="">Accounting Dept</a></li>
+                                    <li><a class="dropdown-item" href="">Marketing Dept</a></li>
+                                    <li><a class="dropdown-item" href="">Management Dept</a></li>
+                                </ul>  
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">HESSA</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Radio Dept</a></li>
+                                    <li><a class="dropdown-item" href="#">Nursing Dept</a></li>
+                                    <li><a class="dropdown-item" href="#">Med-Lab Dept</a></li>
+                                    <li><a class="dropdown-item" href="#">Med-Rehab Dept</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">FESSA</a></li>
+                            <li><a class="dropdown-item" href="#">UMSA</a></li>
+                            <li><a class="dropdown-item" href="#">BAMSA</a></li>
+                            <li><a class="dropdown-item" href="#">DEMSA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DISCUSSIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/login.html">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SIGN-UP</a>
+                    </li>
+                    
+                </ul>
+                <form class="form-inline form-nav">
+                    <input type="text" class="form-control form-button-nav" placeholder="Search Departments, discussions">
+                    <button type="button" class="btn btn-outline-info">Search</button>
+                </form>
+            </div>
+            
+        </div>      
+    </nav>
+    <div  class="container justify-content-center">
+        <div class="login ">
+            <form action="" class="login-form text-center m-5">
+                <h2 class="mb-5 font-weight-bold">LOGIN</h2>
+                <div class="form-group ">
+                    <input type="text" placeholder="Username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <div class="forgot-link form-inline justify-content-center">
+                    <div class="form-check ">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label for="remember">Remember</label>
+                        <a href="" class="ml-3 font-weight-bolder forgot-pass">Forgot Password</a>
+                    </div>
+                    
+                </div>
+                <button class="btn btn-outline-info btn-block text-white border-white mt-3">Login</button>
+                <p class="mt-3">Don't have an account ?  <a href="/html/Sign-up.html" class="ml-2 font-weight-bolder sign-up">Sign-Up</a></p>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/popper-1.14.6.min.js"></script>
+    <script src="/js/bootstrap-4.2.1.min.js"></script>
+    <script src="/js/all.js"></script> <!-- Javascript file for font awesome-->
+    <script src="/js/bootnavbar.js"></script>
+    <script>
+        $('#navbar').bootnavbar();
+    </script>
+</body>
+</html>

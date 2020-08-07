@@ -1,0 +1,329 @@
+
+/*** Navbar */
+#rub{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#rub :hover{
+    color: #007bff;
+}
+
+.listcolor li a:hover{
+    background-color: #007bff;
+}
+
+.main-nav{
+    margin-left: 125px;
+}
+
+.form-nav{
+    margin-left: 125px;
+}
+
+.form-button-nav{
+    margin-right: 7.5px;
+}
+
+
+/*** section1  */
+
+.sec1{
+    min-height: 600px;
+    background-image: url(/img/rub7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #212121;
+    background-blend-mode: multiply;
+    
+}
+
+.sec1-margin{
+    margin-top: 250px;
+}
+
+/**  Login page */
+.login{
+    margin: auto;
+    margin-top: 75px;
+    max-width: 100%;
+    width: 400px;   
+}
+
+/** Sign-Up */
+
+
+/** Sign-Up */
+.create-acc{
+    margin: auto;
+    margin-top: 50px;
+    max-width: 100%;
+    width: 400px; 
+}
+
+.forgot-pass, .sign-up{
+    color: white;
+}
+
+.forgot-pass:hover{
+    color: #17a2b8;
+    text-decoration: none;
+}
+
+.sign-up:hover{
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+/** DISUCSSIONS PAGE */
+.pic-marg{
+    width: 90px;
+    height: 90px;
+    margin-top: 90px;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.menu{
+    margin-top: 40px;
+}
+
+.menubutt{
+    margin-top: 230px;
+}
+
+/** CHAT PAGE FOR DISCUSS */
+.pic-marg2{
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.active-ppl{
+    float: left ;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: white;
+}
+
+.active-ppl h6{
+    line-height: 2px;
+    font-size: 15px;
+}
+
+
+.head-icons{
+    float: right;
+    margin-top: 25px; 
+    margin-right: 15px; 
+    color: white;
+}
+
+.head-fonts {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.form-border{
+    border: 1px solid white !important;
+    border-radius: 20px !important;
+}
+
+.top-color{
+    background: #353535 !important;
+}
+
+.clear{
+    clear: both;
+}
+
+.msg-header{
+    border-bottom: 1px solid black !important;
+    padding-top: 105px;
+}
+
+.chat-img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.received-msg{
+    float: left;
+    width: 45%;
+    margin-top: 25px;
+    margin-left: 8px;
+}
+
+.received-msg p{
+    background: rgb(207, 207, 207) ;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.received-msg span{
+    font-size: 12.5px;
+    margin-top: 0;
+}
+
+.outgoing-msg{
+    float: left;
+    width: 45%;
+    margin-left: 46%;
+    margin-top: 25px;
+    
+}
+
+.outgoing-msg p{
+    width: 100%;
+    background: rgb(151, 150, 150) ;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px 10px 5px 12px;
+    margin-bottom: 0;
+}
+
+.outgoing-msg span{
+    font-size: 12.5px;
+}
+
+.chat-img2{
+    float: right;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+
+.msg-bottom{
+    position: absolute;
+    height: 10%;
+    background-color: #353535;
+    top: 90%;
+    width: 100%;
+}
+
+.input-group{
+    float: right;
+    margin-top: 15px;
+    margin-right: 25px;
+    width: 75% !important;
+}
+
+.bottom-icons{
+    color: white;
+    float: left;
+}
+
+.input-group-text{
+    border: none !important;
+    color: black !important;
+}
+
+.bottom-icons{
+    margin-top: 1.5%;
+    margin-left: 2%;
+}
+
+.bottom-fonts{
+    margin: 10px;
+    font-size: 20px;
+}
+
+
+
+/** Media Queries */
+
+@media (max-width: 576px){
+    .form-nav button{
+        width: 100%;
+    }
+
+    .form-button-nav{
+        margin-right: 0;
+    }
+
+    .input-group{
+        margin-right: 0px;
+    }
+    .bottom-fonts{
+        margin: 0px;
+    }
+    .pic-marg{
+        margin-left: 41.666667%;
+    }
+
+}
+
+@media (min-width: 576px){
+    .pic-marg{
+        margin-left: 41.666667%;
+    }
+
+}
+
+@media (min-width: 768px){
+    .pic-marg{
+        margin-left: 33.333333%;
+    }
+
+}
+
+@media (max-width: 992px){
+    .form-nav, .main-nav{
+        margin-left: 0;
+    }
+
+    .bottom-fonts{
+        margin: 2px;
+    }
+
+    .bottom-icons{
+        margin-top: 4%;
+    }
+
+    .input-group{
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 993px){
+    .form-nav, .main-nav{
+        margin-left: 30px;
+    }
+
+    .bottom-fonts{
+        margin: 3px;
+    }
+
+    .input-group{
+        margin-right: 5px;
+    }
+
+    
+    
+}
+
+@media (min-width: 1200px){
+    .form-nav, .main-nav{
+        margin-left: 120px;
+    }
+    .bottom-fonts{
+        margin: 10px;
+    }
+}
