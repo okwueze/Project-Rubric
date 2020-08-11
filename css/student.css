@@ -147,21 +147,30 @@
     border-bottom: 1px solid black !important;
     padding-top: 105px;
 }
-
+.messages{
+    padding: 1.5rem 2rem;
+}
+.chats{
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.outgoing{
+    justify-content: flex-start;
+}
+.incoming{
+    justify-content: flex-end;
+}
 .chat-img{
-    float: left;
     width: 60px;
     height: 60px;
     padding: 5px;
+    margin-top: 1rem;
     border: 1px solid black;
-    margin-left: 20px;
-    margin-top: 15px;
 }
 
 .received-msg{
-    float: left;
     width: 45%;
-    margin-top: 25px;
     margin-left: 8px;
 }
 
@@ -180,11 +189,8 @@
 }
 
 .outgoing-msg{
-    float: left;
     width: 45%;
-    margin-left: 46%;
-    margin-top: 25px;
-    
+    margin-right: 8px;
 }
 
 .outgoing-msg p{
@@ -199,30 +205,29 @@
 .outgoing-msg span{
     font-size: 12.5px;
 }
-
-.chat-img2{
-    float: right;
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-    border: 1px solid black;
-    margin-right: 10px;
-    margin-top: 13px;
-}
-
-.msg-bottom{
+.content{
     position: absolute;
-    height: 10%;
-    background-color: #353535;
-    top: 90%;
-    width: 100%;
+    left: 20%;
+    right: 0;
 }
-
-.input-group{
-    float: right;
-    margin-top: 15px;
-    margin-right: 25px;
-    width: 75% !important;
+.sidebar{
+    width: 20%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.wrapper{
+    display: flex;
+}
+.msg-bottom{
+    position: fixed;
+    height: auto;
+    padding: .5rem 4%;
+    background-color: #353535;
+    bottom: 0;
+    right: 0;
+    left: 20%;
 }
 
 .bottom-icons{
@@ -248,7 +253,11 @@
 
 
 /** Media Queries */
-
+@media (max-width: 768px){
+    .outgoing-msg, .received-msg{
+        width: 60%;
+    }
+}
 @media (max-width: 576px){
     .form-nav button{
         width: 100%;
@@ -267,7 +276,10 @@
     .pic-marg{
         margin-left: 41.666667%;
     }
-
+    .outgoing-msg, .received-msg{
+        width: 100%;
+    }
+   
 }
 
 @media (min-width: 576px){
@@ -282,24 +294,6 @@
         margin-left: 33.333333%;
     }
 
-}
-
-@media (max-width: 992px){
-    .form-nav, .main-nav{
-        margin-left: 0;
-    }
-
-    .bottom-fonts{
-        margin: 2px;
-    }
-
-    .bottom-icons{
-        margin-top: 4%;
-    }
-
-    .input-group{
-        margin-right: 15px;
-    }
 }
 
 @media (min-width: 993px){
