@@ -78,10 +78,12 @@
 }
 
 /** DISUCSSIONS PAGE */
+
+/* Side bar section */
 .wrap{
     display: flex;
     flex-direction: column;
-    /* position: fixed !important; */
+    position: fixed !important;
     
 }
 
@@ -103,7 +105,13 @@
     margin-top: 350px;
 }
 
-/** CHAT PAGE FOR DISCUSS */
+/* CHAT PAGE FOR DISCUSS */
+
+/* Top chat section */
+.wrapper{
+    margin-left: auto;
+}
+
 .top-color{
     display: flex;
 }
@@ -111,6 +119,7 @@
 .pic-marg2{
     margin-left: 10px;
     margin-top: 15px;
+    margin-bottom: 10px;
     width: 80px;
     height: 80px;
     padding: 5px;
@@ -144,21 +153,18 @@
     border-radius: 20px !important;
 }
 
-.top-color{
-    background: #353535 !important;
-}
-
-.clear{
-    clear: both;
-}
+/* Main chat section */
 
 .msg-header{
     border-bottom: 1px solid black !important;
     padding-top: 105px;
 }
 
+.sent{
+    display: flex;
+}
+
 .chat-img{
-    float: left;
     width: 60px;
     height: 60px;
     padding: 5px;
@@ -167,14 +173,13 @@
     margin-top: 15px;
 }
 
-.received-msg{
-    float: left;
+.sent-msg{
     width: 45%;
     margin-top: 25px;
     margin-left: 8px;
 }
 
-.received-msg p{
+.sent-msg p{
     background: rgb(207, 207, 207) ;
     border-radius: 10px;
     font-size: 14px;
@@ -183,20 +188,23 @@
     margin-bottom: 0;
 }
 
-.received-msg span{
+.sent-msg span{
     font-size: 12.5px;
     margin-top: 0;
 }
 
-.outgoing-msg{
-    float: left;
+.received{
+    display: flex;
+}
+
+.received-msg{
     width: 45%;
     margin-left: 46%;
     margin-top: 25px;
     
 }
 
-.outgoing-msg p{
+.received-msg p{
     width: 100%;
     background: rgb(151, 150, 150) ;
     border-radius: 10px;
@@ -205,12 +213,11 @@
     margin-bottom: 0;
 }
 
-.outgoing-msg span{
+.received-msg span{
     font-size: 12.5px;
 }
 
 .chat-img2{
-    float: right;
     width: 60px;
     height: 60px;
     padding: 5px;
@@ -219,16 +226,16 @@
     margin-top: 13px;
 }
 
+/* Type message Area */
+
 .msg-bottom{
-    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
     height: 10%;
-    background-color: #353535;
-    top: 90%;
-    width: 100%;
+
 }
 
 .input-group{
-    float: right;
     margin-top: 15px;
     margin-right: 25px;
     width: 75% !important;
@@ -236,7 +243,6 @@
 
 .bottom-icons{
     color: white;
-    float: left;
 }
 
 .input-group-text{
