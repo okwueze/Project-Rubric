@@ -115,7 +115,8 @@
 .chat-wrapper{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    /* height: 125%; */
+    background-color: white;
 }
 
 .top-color{
@@ -232,7 +233,8 @@
 .msg-bottom{
     display: flex;
     flex-direction: row-reverse;
-    height: 10%;
+    /* height: 13%; */
+    flex: 1;
 }
 
 .input-group{
