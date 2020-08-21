@@ -118,7 +118,7 @@
 
 .pic-marg2{
     margin-left: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
     width: 80px;
     height: 80px;
@@ -155,11 +155,6 @@
 
 /* Main chat section */
 
-.msg-header{
-    border-bottom: 1px solid black !important;
-    padding-top: 105px;
-}
-
 .sent{
     display: flex;
 }
@@ -169,7 +164,7 @@
     height: 60px;
     padding: 5px;
     border: 1px solid black;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 15px;
 }
 
@@ -198,7 +193,7 @@
 }
 
 .received-msg{
-    width: 45%;
+    /* width: 45%; */
     margin-left: 46%;
     margin-top: 25px;
     
@@ -222,8 +217,8 @@
     height: 60px;
     padding: 5px;
     border: 1px solid black;
-    margin-right: 10px;
-    margin-top: 13px;
+    margin-right: 5px;
+    margin-top: 10px;
 }
 
 /* Type message Area */
