@@ -44,6 +44,22 @@
     margin-top: 250px;
 }
 
+.newsletter{
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter1{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .newsletter2{
+    display: flex !important;
+    flex-direction: row;
+    margin: 20px;
+} */
+
 /**  Login page */
 .login{
     margin: auto;
