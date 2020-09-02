@@ -272,7 +272,7 @@
 }
 
 .bottom-icons{
-    width: 40%;
+    width: 20%;
     color: white;
     text-align: right;
 }
@@ -299,7 +299,7 @@
 }
 .submit_group{
     display: flex;
-    width: 60%;
+    width: 80%;
 }
 .input-group-text{
     border: none !important;
