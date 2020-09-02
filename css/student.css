@@ -256,6 +256,9 @@
 .msg-bottom{
     position: fixed;
     height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     padding: .5rem 4%;
     background-color: #353535;
     bottom: 0;
@@ -269,14 +272,35 @@
 }
 
 .bottom-icons{
-    color: white;
     width: 40%;
+    color: white;
+    text-align: right;
 }
-
-.input-group{
+.send_btn{
+    box-shadow: none;
+    color: #fff;
+    padding: 0 .8rem;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #eae7e71f;
+    cursor: pointer;
+    position: relative;
+    background: #353535;
+}
+.send_btn:focus, .send_btn:active{
+    outline: none;
+    outline-width: 0;
+    
+}
+.bottom-form{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.submit_group{
+    display: flex;
     width: 60%;
 }
-
 .input-group-text{
     border: none !important;
     color: black !important;
