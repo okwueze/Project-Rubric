@@ -104,11 +104,10 @@
 }
 
 .pic-marg{
-    align-self: center;
+    /* align-self: center; */
     width: 90px;
     height: 90px;
     margin-top: 90px;
-    margin-left: 0 !important;
     padding: 5px;
     border: 1px solid white;
 }
@@ -264,8 +263,18 @@
     left: 20%;
 }
 
+.msg-bottom2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .bottom-icons{
     color: white;
+    width: 40%;
+}
+
+.input-group{
+    width: 60%;
 }
 
 .input-group-text{
