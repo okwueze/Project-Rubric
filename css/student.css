@@ -253,6 +253,7 @@
     color: white;
     text-align: right;
 }
+
 .send_btn{
     box-shadow: none;
     color: #fff;
@@ -265,30 +266,36 @@
     position: relative;
     background: #353535;
 }
+
 .send_btn:focus, .send_btn:active{
     outline: none;
     outline-width: 0;
     
 }
+
 .bottom-form{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 .submit_group{
     display: flex;
     width: 85%;
 }
+
 .input-group-text{
     border: none !important;
     color: black !important;
 }
+
 .toggleview{
     transform: translateX(0) !important;
 }
-/* .bottom-icons{
-    margin-top: 0.5%;
-    margin-left: 2%;
-} */
+
+.toggle-out{
+    margin-left: 90%;
+}
+
 
 
 
@@ -353,6 +360,7 @@
         display: none;
     }
 
+    
 
 }
 
