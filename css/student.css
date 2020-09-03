@@ -174,14 +174,16 @@
 }
 .chats{
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
     width: 100%;
 }
 .outgoing{
     justify-content: flex-start;
+    padding-left: 5px;
 }
 .incoming{
     justify-content: flex-end;
+    padding-right: 5px;
 }
 .chat-img{
     width: 60px;
@@ -193,31 +195,25 @@
 
 .received-msg{
     width: 45%;
-    margin-left: 8px;
-}
-
-.sent-msg p{
-    background: rgb(207, 207, 207) ;
-    border-radius: 10px;
-    font-size: 14px;
-    padding: 5px 10px 5px 12px;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.sent-msg span{
-    font-size: 12.5px;
-    margin-top: 0;
+    margin-left: 5px;
 }
 
 .outgoing-msg{
     width: 45%;
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .received-msg p{
     width: 100%;
     background: rgb(151, 150, 150) ;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px 10px 5px 12px;
+}
+
+.outgoing-msg p{
+    width: 100%;
+    background: rgb(209, 208, 208) ;
     border-radius: 10px;
     font-size: 14px;
     padding: 5px 10px 5px 12px;
@@ -239,17 +235,13 @@
     left: 0;
 }
 
-/* .wrapper{
-    display: flex;
-} */
-
 .msg-bottom{
     position: fixed;
     height: auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: .5rem 4%;
+    padding: .5rem 3%;
     background-color: #353535;
     bottom: 0;
     right: 0;
@@ -291,10 +283,10 @@
     color: black !important;
 }
 
-.bottom-icons{
+/* .bottom-icons{
     margin-top: 0.5%;
     margin-left: 2%;
-}
+} */
 
 
 
