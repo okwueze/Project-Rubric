@@ -282,7 +282,9 @@
     border: none !important;
     color: black !important;
 }
-
+.toggleview{
+    transform: translateX(0) !important;
+}
 /* .bottom-icons{
     margin-top: 0.5%;
     margin-left: 2%;
@@ -309,7 +311,16 @@
         width: 60%;
     } */
     .sidebar{
-        display: none;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        transition: transform .5s ease-in-out;
+        position: fixed;
+        width: 70%;
+        top: 0;
+        z-index: 999999;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-150%);
     }
     .content{
         position: absolute;
@@ -334,7 +345,11 @@
         width: 90%;
     }
 
-    .top-color{
+    #top-form{
+        display: none;
+    }
+
+    .head-fonts{
         display: none;
     }
 

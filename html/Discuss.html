@@ -14,7 +14,9 @@
 <body>
     <div class="">
         <div class="">
-            <div class="sidebar bg-light p-0">
+            <div class="sidebar bg-light p-0" id="sidebar">
+                <i class="fas fa-bars ml-3 d-sm-block d-md-none text-white" 
+                    onclick="toggleSidebar()"></i>
                 <img src="/img/back.jpeg" class=" rounded-circle pic-marg" >
                 <div class="text-center font-weight-bold mt-1">
                     <p class="mb-1">Ikenna Okwueze</p>
@@ -29,7 +31,8 @@
             </div>
             <div class="content bg-white text-light p-0" >
                 <div class="sticky-top top-color bg-light">
-                    <i class="fas fa-bars d-sm-block d-md-none text-white"></i>
+                    <i class="fas fa-bars ml-3 d-sm-block d-md-none text-white" 
+                    onclick="toggleSidebar()" id="toggle"></i>
                     <img src="/img/back.jpeg" class="rounded-circle pic-marg2" alt="">
                     <div class="active-ppl">
                         <h4>Ikenna Okwueze</h4>
@@ -43,7 +46,7 @@
                             <button class="btn btn-light form-border"><i class="fa fa-search"></i></button>
                         </form>
                     </div>   
-                    <div class="msg-header "></div>
+                
                 </div>
     
                 <div class="p-2"></div>
@@ -177,6 +180,10 @@
     <script src="/js/bootnavbar.js"></script>
     <script>
         $('#navbar').bootnavbar();
+        function toggleSidebar(){
+            let sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('toggleview')
+        }
     </script>
 </body>
 </html>
