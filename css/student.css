@@ -290,6 +290,8 @@
 
 .toggleview{
     transform: translateX(0) !important;
+    /* The translateX set to 0(zero) here is meant to 
+    return the sidebar to it's original positon */
 }
 
 .toggle-out{
@@ -311,23 +313,22 @@
 }
 
 @media (max-width: 768px){
-    /* .bottom-icons{
-        width: 40%;
-    }
-    .submit_group{
-        width: 60%;
-    } */
+    
     .sidebar{
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        /* animation-iteration-count: 1; */
+        /* animation-fill-mode: backwards; */
         transition: transform .5s ease-in-out;
-        position: fixed;
+        /* position: fixed; */
         width: 70%;
-        top: 0;
-        z-index: 999999;
-        bottom: 0;
-        left: 0;
+        /* top: 0; */
+        z-index: 99999;
+        /* bottom: 0;
+        left: 0; */
         transform: translateX(-150%);
+        /* The translateX set to -150 is make the sidebar 
+        disappear when the widht reaches 768px then the
+        zero above is used to return the sidebar to its 
+        original position */
     }
     .content{
         position: absolute;
