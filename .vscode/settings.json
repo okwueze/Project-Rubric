@@ -1,7 +1,6 @@
 {
     "liveServer.settings.port": 5502,
-    "window.zoomLevel": 1,
-    "editor.fontSize": 13,
+    "editor.fontSize": 15,
     "cSpell.ignoreWords": [
         "ad",
         "adipisicing",
@@ -35,5 +34,6 @@
         "ullam",
         "velit",
         "voluptas"
-    ]
+    ],
+    "files.autoSave": "afterDelay"
 }
